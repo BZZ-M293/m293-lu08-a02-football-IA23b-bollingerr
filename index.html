@@ -2,20 +2,217 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>1. FC Hinterforst</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+    }
 
+    header {
+      background-color: #0044cc;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2, h3 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    form button {
+      background-color: #0044cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #003399;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    
+    <h1>1. FC Hinterforst</h1>
   </header>
   <nav>
-    
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#spiele">Spiele</a></li>
+      <li><a href="#sponsoren">Sponsoren</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
   </nav>
-  <h1>1. FC Hinterforst</h1>
+
+  <!-- Home Page -->
+  <section id="home">
+    <h2>Willkommen beim 1. FC Hinterforst</h2>
+    <p>Der 1. FC Hinterforst ist ein Fußballverein mit langer Tradition. Gegründet in der kleinen Gemeinde Hinterforst, hat der Verein eine lange Geschichte von sportlichen Erfolgen, sozialer Integration und Gemeinschaftsgeist.</p>
+    <h3>Unsere Erfolge</h3>
+    <img src="images/erfolge.jpg" alt="Erfolge des 1. FC Hinterforst">
+    <p>Hier sind einige unserer stolzesten Momente...</p>
+
+    <h3>Aktuelle Nachrichten</h3>
+    <article>
+      <h4>Neuer Trainer eingestellt</h4>
+      <p>Wir freuen uns, unseren neuen Trainer begrüßen zu dürfen...</p>
+    </article>
+
+    <h3>Kommende Spiele und Veranstaltungen</h3>
+    <ul>
+      <li>18.06.2024 - Heimspiel gegen FC Beispiel</li>
+      <li>25.06.2024 - Auswärtsspiel gegen FC Musterstadt</li>
+    </ul>
+  </section>
+
+  <!-- Spiele Page -->
+  <section id="spiele">
+    <h2>Spiele</h2>
+    <h3>Kommende Spiele</h3>
+    <ul>
+      <li>Datum: 18.06.2024, Uhrzeit: 18:00, Ort: Hinterforst Stadion, Gegner: FC Beispiel <a href="#">Tickets</a></li>
+      <li>Datum: 25.06.2024, Uhrzeit: 20:00, Ort: Musterstadt Stadion, Gegner: FC Musterstadt <a href="#">Tickets</a></li>
+    </ul>
+    <h3>Vergangene Spiele</h3>
+    <ul>
+      <li>Datum: 10.06.2024, Gegner: FC Demo, Ergebnis: 3-1</li>
+    </ul>
+    <h3>Spielberichte</h3>
+    <article>
+      <h4>1. FC Hinterforst vs FC Demo</h4>
+      <p>Ein spannendes Spiel, das mit einem klaren Sieg für den 1. FC Hinterforst endete...</p>
+      <img src="images/spielszenen.jpg" alt="Spielszenen">
+    </article>
+  </section>
+
+  <!-- Sponsoren Page -->
+  <section id="sponsoren">
+    <h2>Sponsoren</h2>
+    <ul>
+      <li>
+        <img src="images/sponsor1.jpg" alt="Sponsor 1 Logo">
+        <p>Sponsor 1 - Unterstützt uns seit 2010</p>
+        <a href="https://sponsor1.de">Website</a>
+      </li>
+      <li>
+        <img src="images/sponsor2.jpg" alt="Sponsor 2 Logo">
+        <p>Sponsor 2 - Unser Hauptsponsor</p>
+        <a href="https://sponsor2.de">Website</a>
+      </li>
+    </ul>
+    <h3>Werden Sie Sponsor</h3>
+    <p>Informationen zu unseren Sponsoring-Paketen...</p>
+    <p>Kontakt: <a href="mailto:sponsoring@fc-hinterforst.de">sponsoring@fc-hinterforst.de</a></p>
+  </section>
+
+  <!-- Kontakt Page -->
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>Kontaktieren Sie uns für allgemeine Anfragen, Feedback oder Unterstützung.</p>
+    <form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="nachricht">Nachricht:</label>
+      <textarea id="nachricht" name="nachricht" required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+    <h3>Unsere Adresse</h3>
+    <p>1. FC Hinterforst, Sportplatzstrasse 1, 12345 Hinterforst</p>
+    <h3>Soziale Medien</h3>
+    <p>Folgen Sie uns auf <a href="#">Facebook</a>, <a href="#">Twitter</a> und <a href="#">Instagram</a></p>
+  </section>
 
   <footer>
-    
+    <p>&copy; 2024 1. FC Hinterforst. Alle Rechte vorbehalten.</p>
   </footer>
 </body>
 </html>
